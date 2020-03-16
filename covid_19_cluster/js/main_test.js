@@ -304,6 +304,53 @@ function forceNational() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+//GROUP BY HOSPITAL
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function forceHospital() {
+
+	//width divider
+	var div = Math.max.apply(Math,graph.nodes.map(function(d){return d.rsid;}));
+	console.log(div);
+	console.log(width);
+	var scale = width/div/1.5;
+	console.log(scale);
+	var arrdomain = Array.from(Array(div), (value, index) => (index+1));
+	var arrrange = Array.from(Array(div), (value, index) => ((index+1)*scale));
+	console.log(arrrange);
+	console.log(arrdomain);
+
+	var scaleCat = d3.scaleOrdinal()
+	  .domain(arrdomain)
+	  .range(arrrange)
+
+	simulation.force("center")
+		.x(width * forceProperties.center.x)
+		.y(height * forceProperties.center.y+50);
+	simulation.force("charge")
+		.strength(-150)
+		.distanceMin(forceProperties.charge.distanceMin)
+		.distanceMax(forceProperties.charge.distanceMax);
+	simulation.force("collide")
+		.strength(forceProperties.collide.strength * forceProperties.charge.enabled)
+		.radius(forceProperties.collide.radius)
+		.iterations(forceProperties.collide.iterations);
+	simulation.force("forceX")
+		.strength(0.5)
+		.x(height * forceProperties.forceX.x);
+	simulation.force("forceY")
+		.strength(0.7)
+		.y(function(d){ return scaleCat(d.rsid) } );
+	simulation.force("link")
+		.id(function(d) { return d.id ;})
+		.distance(forceProperties.link.distance)
+		.strength(0.01)
+		.iterations(forceProperties.link.iterations)
+		.links(forceProperties.link.enabled ? graph.links : []);
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 //LOAD DATA
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -399,6 +446,8 @@ function updateForces() {
 		forceStatus();
 	} else if ( document.getElementById("umur").selected) {
 		forceAge();
+	} else if ( document.getElementById("rs").selected) {
+		forceHospital();
 	}
 
 
@@ -495,7 +544,10 @@ function updateDisplay() {
 		colorStatus();
 	} else if ( document.getElementById("umur-color").selected) {
 		colorAge();
-	};
+	} else if ( document.getElementById("rs-color").selected) {
+		colorHospital();
+	}
+
 	node
 		.on("mouseover", fade(.1, "black"))
 		.on("mouseout",fade(1, "white"));
@@ -711,6 +763,82 @@ function colorGender(){
 	  }
 
 		legendGender();
+
+		isLegendHidden = true;
+};
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//COLOR BY HOSPITAL
+////////////////////////////////////////////////////////////////////////////////////////////////////
+function colorHospital(){
+	var domain = [1,2,3,4,5,6];
+
+	var warnaHospital = d3.scaleOrdinal()
+	.domain(domain)
+	.range([d3.schemeCategory10]);
+
+	node
+		.attr("r", radius)
+		.style("fill", function(d) {return warnaHospital( d.rsid );})
+		.style("stroke", "white")
+		.style("stroke-width", 3)
+
+	var el = document.getElementsByClassName("legend");
+	$(el).remove();
+
+	//GENDER LEGEND
+	function legendHospital() {
+	       // update visibility
+	       isLegendHidden = !isLegendHidden;
+	       var visibility = (isLegendHidden) ? "hidden" : "visible";
+
+				 var data = {"klaster":["RSPI Sulianto Saroso, Jakarta","RS Persahabatan, Jakarta","RS Sanglah, Bali","RSPAD Gatot Subroto, Jakarta","RS Moewardi, Solo","Tidak Diketahui"],
+				 	"id":[1,2,3,4,5,6]};
+		     console.log(data);
+
+		     var color = d3.scaleLinear()
+		       .range(d3.schemeCategory10)
+		       .domain(data.id);
+
+	       // load legend content (if it changes based on node)
+				 // Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
+		     var legend = d3
+				 	 .select(".bottom-container")
+					 .append("div")
+					 .attr("class","legend")
+					 .style("position", "absolute")
+			     .style("padding", "4px")
+			     .style("z-index", "2")
+					 .style("top",0)
+					 .style("visibility", visibility)
+					 .append("svg")
+					 .style("height","200px")
+		       .selectAll("g")
+		       .data(data.id)
+		       .enter()
+		       .append("g")
+		       .attr("transform", function(d, i) { return "translate(0," + i * 19 + ")"; });
+
+		     legend.append("rect")
+		       .attr("width", 13)
+		       .attr("height", 13)
+		       .style("fill", color);
+
+		     legend.append("text")
+		       .data(data.klaster)
+		       .attr("x", 24)
+		       .attr("y", 7)
+					 .style("fill","white")
+					 .style("font-family","Lato")
+					 .style("font-size",9)
+		       .attr("dy", ".35em")
+		       .text(function(d) { return d; });
+
+	       // place tooltip where cursor was
+	       return legend.style("visibility", visibility);
+	  }
+
+		legendHospital();
 
 		isLegendHidden = true;
 };
@@ -958,7 +1086,7 @@ function ticked() {
 	idText
 		.attr("x", function(d){ return d.x; })
 		.attr("y", function(d){ return d.y; });
-}
+};
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -969,24 +1097,24 @@ function dragstarted(d) {
 	if (!d3.event.active) simulation.alphaTarget(0.3).restart();
 	d.fx = d.x;
 	d.fy = d.y;
-}
+};
 
 function dragged(d) {
 	d.fx = d3.event.x;
 	d.fy = d3.event.y;
-}
+};
 
 function dragended(d) {
   if (!d3.event.active) simulation.alphaTarget(0.0001);
   d.fx = null;
   d.fy = null;
-}
+};
 
 // convenience function to update everything (run after UI input)
 function updateAll() {
     updateForces();
     updateDisplay();
-}
+};
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1006,19 +1134,19 @@ function clickNode(node) {
 
        // place tooltip where cursor was
        return tooltip.style("visibility", visibility);
-  }
+  };
 
   // reset nodes to not be pinned
   function unPinNode(node) {
      node.fx = null;
      node.fy = null;
-  }
+  };
 
 	// reset nodes to not be pinned
 	function unPinLegend(legend) {
 		 legend.fx = null;
 		 legend.fy = null;
-	}
+	};
 
   // add html content to tooltip
   function loadTooltipContent(node) {
@@ -1028,12 +1156,13 @@ function clickNode(node) {
       htmlContent += "<tr><td width=\"30%\">Jenis Kelamin: <\/td> <td><strong>" + node.gender +"<\/strong><\/td><\/tr>"
       htmlContent += "<tr><td width=\"30%\">Umur: <\/td> <td><strong>" + node.umurtext +"<\/strong><\/td><\/tr>"
 			htmlContent += "<tr><td width=\"30%\">Status: <\/td> <td><strong>" + node.status +"<\/strong><\/td><\/tr>"
+			htmlContent += "<tr><td width=\"30%\">Rumah Sakit: <\/td> <td><strong>" + node.rs +"<\/strong><\/td><\/tr>"
 			htmlContent += "<tr><td width=\"30%\">Kewarganegaraan: <\/td> <td><strong>" + node.wn +"<\/strong><\/td><\/tr>"
       htmlContent += "<tr><td width=\"30%\">Tanggal Pengumuman: <\/td> <td><strong>" + node.pengumuman +"<\/strong><\/td><\/tr>"
       htmlContent += "<tr><td width=\"30%\">Asal Penularan: <\/td> <td><strong>" + node.penularan +"<\/strong><\/td><\/tr>"
       htmlContent += "<tr><td width=\"30%\">Klaster <\/td> <td><strong>" + node.klaster +"<\/strong><\/td><\/tr>"
       tooltip.html(htmlContent);
-  }
+  };
 
   // add tooltip to HTML body
   var tooltip = d3.select(".bottom-container")

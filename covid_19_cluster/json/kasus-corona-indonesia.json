@@ -14,7 +14,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Sembuh",
-      "statusid": 1
+      "statusid": 1,
+      "rs": "RSPI Sulianto Saroso, Jakarta",
+      "rsid": 1
     },
     {
       "id": 2,
@@ -30,7 +32,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "RSPI Sulianto Saroso, Jakarta",
+      "rsid": 1
     },
     {
       "id": 3,
@@ -46,7 +50,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Sembuh",
-      "statusid": 1
+      "statusid": 1,
+      "rs": "RSPI Sulianto Saroso, Jakarta",
+      "rsid": 1
     },
     {
       "id": 4,
@@ -62,7 +68,9 @@
       "genderid": 3,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "RSPI Sulianto Saroso, Jakarta",
+      "rsid": 1
     },
     {
       "id": 5,
@@ -78,7 +86,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "RSPI Sulianto Saroso, Jakarta",
+      "rsid": 1
     },
     {
       "id": 6,
@@ -94,7 +104,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Sembuh",
-      "statusid": 1
+      "statusid": 1,
+      "rs": "RS Persahabatan, Jakarta",
+      "rsid": 2
     },
     {
       "id": 7,
@@ -110,7 +122,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 8,
@@ -126,7 +140,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 9,
@@ -142,7 +158,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 10,
@@ -158,7 +176,9 @@
       "genderid": 2,
       "wnid": 2,
       "status": "Sembuh",
-      "statusid": 1
+      "statusid": 1,
+      "rs": "RSPI Sulianto Saroso, Jakarta",
+      "rsid": 1
     },
     {
       "id": 11,
@@ -174,7 +194,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 12,
@@ -190,7 +212,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 13,
@@ -206,7 +230,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 14,
@@ -222,7 +248,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Sembuh",
-      "statusid": 1
+      "statusid": 1,
+      "rs": "RS Persahabatan, Jakarta",
+      "rsid": 2
     },
     {
       "id": 15,
@@ -238,7 +266,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 16,
@@ -254,7 +284,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 17,
@@ -270,7 +302,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 18,
@@ -286,7 +320,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 19,
@@ -302,7 +338,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 20,
@@ -318,7 +356,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "RS Persahabatan, Jakarta",
+      "rsid": 2
     },
     {
       "id": 21,
@@ -334,7 +374,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 22,
@@ -350,7 +392,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 23,
@@ -366,7 +410,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 24,
@@ -382,7 +428,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "RS Persahabatan, Jakarta",
+      "rsid": 2
     },
     {
       "id": 25,
@@ -398,7 +446,9 @@
       "genderid": 1,
       "wnid": 2,
       "status": "Meninggal dunia",
-      "statusid": 3
+      "statusid": 3,
+      "rs": "RS Sanglah, Bali",
+      "rsid": 3
     },
     {
       "id": 26,
@@ -414,7 +464,9 @@
       "genderid": 2,
       "wnid": 2,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 27,
@@ -430,7 +482,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 28,
@@ -446,7 +500,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 29,
@@ -462,7 +518,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 30,
@@ -478,7 +536,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 31,
@@ -494,7 +554,9 @@
       "genderid": 1,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 32,
@@ -510,7 +572,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 33,
@@ -526,7 +590,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 34,
@@ -542,7 +608,9 @@
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 35,
@@ -558,7 +626,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Meninggal dunia",
-      "statusid": 3
+      "statusid": 3,
+      "rs": "RSPI Sulianto Saroso, Jakarta",
+      "rsid": 1
     },
     {
       "id": 36,
@@ -574,7 +644,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Meninggal dunia",
-      "statusid": 3
+      "statusid": 3,
+      "rs": "RSPI Sulianto Saroso, Jakarta",
+      "rsid": 1
     },
     {
       "id": 37,
@@ -590,7 +662,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 38,
@@ -606,7 +680,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 39,
@@ -622,7 +698,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 40,
@@ -638,7 +716,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 41,
@@ -654,7 +734,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 42,
@@ -670,7 +752,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 43,
@@ -686,7 +770,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 44,
@@ -702,7 +788,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 45,
@@ -718,7 +806,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 46,
@@ -734,7 +824,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 47,
@@ -750,7 +842,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 48,
@@ -766,7 +860,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 49,
@@ -782,7 +878,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 50,
@@ -798,7 +896,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Meninggal dunia",
-      "statusid": 3
+      "statusid": 3,
+      "rs": "RS Moewardi, Solo",
+      "rsid": 5
     },
     {
       "id": 51,
@@ -814,7 +914,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 52,
@@ -830,7 +932,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 53,
@@ -846,7 +950,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 54,
@@ -862,7 +968,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 55,
@@ -878,7 +986,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 56,
@@ -894,7 +1004,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 57,
@@ -910,7 +1022,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 58,
@@ -926,7 +1040,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 59,
@@ -942,7 +1058,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 60,
@@ -958,7 +1076,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 61,
@@ -974,7 +1094,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 62,
@@ -990,7 +1112,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 63,
@@ -1006,7 +1130,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 64,
@@ -1022,7 +1148,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 65,
@@ -1038,7 +1166,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 66,
@@ -1054,7 +1184,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 67,
@@ -1070,7 +1202,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 68,
@@ -1086,7 +1220,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 69,
@@ -1102,7 +1238,9 @@
       "genderid": 1,
       "wnid": 3,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 70,
@@ -1118,7 +1256,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 71,
@@ -1134,7 +1274,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 72,
@@ -1150,7 +1292,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 73,
@@ -1166,7 +1310,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 74,
@@ -1182,7 +1328,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 75,
@@ -1198,7 +1346,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 76,
@@ -1208,13 +1358,15 @@
       "umur": 63,
       "umurtext": "63 tahun",
       "pengumuman": "14 Maret 2020",
-      "penularan": "Tidak diketahui",
+      "penularan": "1. 20 Februari atau lebih dari 3 minggu lalu ke kantor RM <br>2. 21 Feb Acara Abupi di Ritz Carlton Kuningan <br>3. 24 Feb Rapat dengan komisi V DPR RI <br>4. 26 Feb Acara dengan Kompas di Hotel Sultan. <br>5. 28-29 Feb kunjungan ke Luwu dan Toraja. <br>6. 29 Feb Presscon diskon tiket pesawat di Soetta  <br>7. 2 Maret jemput awak Diamond Princess <br>8. 4 Maret Foto Menhub di Istana dengan wartawan istana.<br>9. 10 Maret 10 Maret bertemu Menteri Belanda dan Raja Belanda <br>10. 11 Maret,  wartawan yang habis interaksi dengan BKS di Istana,  ke kantor menko dan berinterksi dengan wartawan banteng.",
       "klaster": "Istana Negara",
       "klasterid": 9,
       "genderid": 2,
       "wnid": 1,
       "status": "Dalam perawatan",
-      "statusid": 2
+      "statusid": 2,
+      "rs": "RSPAD Gatot Subroto, Jakarta",
+      "rsid": 4
     },
     {
       "id": 77,
@@ -1230,7 +1382,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 78,
@@ -1246,7 +1400,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 79,
@@ -1262,7 +1418,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 80,
@@ -1278,7 +1436,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 81,
@@ -1294,7 +1454,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 82,
@@ -1310,7 +1472,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 83,
@@ -1326,7 +1490,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 84,
@@ -1342,7 +1508,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 85,
@@ -1358,7 +1526,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 86,
@@ -1374,7 +1544,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 87,
@@ -1390,7 +1562,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 88,
@@ -1406,7 +1580,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 89,
@@ -1422,7 +1598,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 90,
@@ -1438,7 +1616,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 91,
@@ -1454,7 +1634,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 92,
@@ -1470,7 +1652,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 93,
@@ -1486,7 +1670,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 94,
@@ -1502,7 +1688,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 95,
@@ -1518,7 +1706,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 96,
@@ -1534,7 +1724,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 97,
@@ -1550,7 +1742,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 98,
@@ -1566,7 +1760,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 99,
@@ -1582,7 +1778,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 100,
@@ -1598,7 +1796,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 101,
@@ -1614,7 +1814,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 102,
@@ -1630,7 +1832,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 103,
@@ -1646,7 +1850,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 104,
@@ -1662,7 +1868,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 105,
@@ -1678,7 +1886,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 106,
@@ -1694,7 +1904,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 107,
@@ -1710,7 +1922,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 108,
@@ -1726,7 +1940,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 109,
@@ -1742,7 +1958,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 110,
@@ -1758,7 +1976,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 111,
@@ -1774,7 +1994,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 112,
@@ -1790,7 +2012,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 113,
@@ -1806,7 +2030,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 114,
@@ -1822,7 +2048,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 115,
@@ -1838,7 +2066,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 116,
@@ -1854,7 +2084,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     },
     {
       "id": 117,
@@ -1870,7 +2102,9 @@
       "genderid": 3,
       "wnid": 3,
       "status": "Tidak diketahui",
-      "statusid": 4
+      "statusid": 4,
+      "rs": "Tidak diketahui",
+      "rsid": 6
     }
   ],
   "links": [
