@@ -175,8 +175,8 @@
       "klasterid": 1,
       "genderid": 2,
       "wnid": 2,
-      "status": "Sembuh",
-      "statusid": 1,
+      "status": "Dalam perawatan",
+      "statusid": 2,
       "rs": "RSPI Sulianto Saroso, Jakarta",
       "rsid": 1
     },
