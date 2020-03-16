@@ -326,7 +326,7 @@ function forceHospital() {
 
 	simulation.force("center")
 		.x(width * forceProperties.center.x)
-		.y(height * forceProperties.center.y+50);
+		.y(height * forceProperties.center.y+150);
 	simulation.force("charge")
 		.strength(-150)
 		.distanceMin(forceProperties.charge.distanceMin)
@@ -474,11 +474,13 @@ function initializeDisplay() {
 	//set the data and properties of the node circle
 	node = g
 		.append("g")
+		.style("z-index","5")
 		.attr("class", "nodes")
 		.selectAll("circle")
 		.data(graph.nodes)
 		.enter()
 		.append("circle")
+		.style("z-index","6")
 		.on("click", clickNode)
 		.on("mouseover", function(d) {
 			d3.select(this).style("cursor", "pointer");
@@ -494,10 +496,12 @@ function initializeDisplay() {
 	//text on node
 	idText = g
 		.append("g")
+		.style("z-index","7")
 		.selectAll("text")
 		.data(graph.nodes)
 		.enter()
 		.append("text")
+			.style("z-index","8")
 			.attr("class",".text")
 			.attr("text-anchor", "middle")
 			.attr("dy", ".35em")
@@ -655,11 +659,13 @@ function colorCluster(){
 					 .attr("class","legend")
 					 .style("position", "absolute")
 			     .style("padding", "4px")
-			     .style("z-index", "2")
+			     .style("z-index", "0")
 					 .style("top",0)
 					 .style("visibility", visibility)
 					 .append("svg")
-					 .style("height","200px")
+					 .style("z-index", "0")
+					 .style("width", "120px")
+					 .style("height","180px")
 		       .selectAll("g")
 		       .data(data.id)
 		       .enter()
@@ -732,11 +738,13 @@ function colorGender(){
 					 .attr("class","legend")
 					 .style("position", "absolute")
 			     .style("padding", "4px")
-			     .style("z-index", "2")
+			     .style("z-index", "0")
 					 .style("top",0)
 					 .style("visibility", visibility)
 					 .append("svg")
-					 .style("height","200px")
+					 .style("z-index", "0")
+					 .style("width", "120px")
+					 .style("height","70px")
 		       .selectAll("g")
 		       .data(data.id)
 		       .enter()
@@ -771,15 +779,10 @@ function colorGender(){
 //COLOR BY HOSPITAL
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 function colorHospital(){
-	var domain = [1,2,3,4,5,6];
-
-	var warnaHospital = d3.scaleOrdinal()
-	.domain(domain)
-	.range([d3.schemeCategory10]);
 
 	node
 		.attr("r", radius)
-		.style("fill", function(d) {return warnaHospital( d.rsid );})
+		.style("fill", function(d) {return warna( d.rsid );})
 		.style("stroke", "white")
 		.style("stroke-width", 3)
 
@@ -808,11 +811,13 @@ function colorHospital(){
 					 .attr("class","legend")
 					 .style("position", "absolute")
 			     .style("padding", "4px")
-			     .style("z-index", "2")
+			     .style("z-index", "0")
 					 .style("top",0)
 					 .style("visibility", visibility)
 					 .append("svg")
-					 .style("height","200px")
+					 .style("z-index", "0")
+					 .style("width", "170px")
+					 .style("height","120px")
 		       .selectAll("g")
 		       .data(data.id)
 		       .enter()
@@ -822,7 +827,7 @@ function colorHospital(){
 		     legend.append("rect")
 		       .attr("width", 13)
 		       .attr("height", 13)
-		       .style("fill", color);
+		       .style("fill", warna);
 
 		     legend.append("text")
 		       .data(data.klaster)
@@ -885,11 +890,13 @@ function colorNational(){
 					 .attr("class","legend")
 					 .style("position", "absolute")
 			     .style("padding", "4px")
-			     .style("z-index", "2")
+			     .style("z-index", "0")
 					 .style("top",0)
 					 .style("visibility", visibility)
 					 .append("svg")
-					 .style("height","200px")
+					 .style("z-index", "0")
+					 .style("width", "120px")
+					 .style("height","70px")
 		       .selectAll("g")
 		       .data(data.id)
 		       .enter()
@@ -960,10 +967,12 @@ function colorStatus(){
 				 .attr("class","legend")
 				 .style("position", "absolute")
 				 .style("padding", "4px")
-				 .style("z-index", "2")
+				 .style("z-index", "0")
 				 .style("top",0)
 				 .style("visibility", visibility)
 				 .append("svg")
+				 .style("z-index", "0")
+				 .style("width", "120px")
 				 .style("height","200px")
 				 .selectAll("g")
 				 .data(data.id)
@@ -1036,11 +1045,13 @@ function colorAge(){
 				 .attr("class","legend")
 				 .style("position", "absolute")
 				 .style("padding", "4px")
-				 .style("z-index", "2")
+				 .style("z-index", "0")
 				 .style("top",0)
 				 .style("visibility", visibility)
 				 .append("svg")
-				 .style("height","200px")
+				 .style("z-index", "0")
+				 .style("width", "105px")
+				 .style("height","210px")
 				 .selectAll("g")
 				 .data(data.id)
 				 .enter()
