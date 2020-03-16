@@ -1,5 +1,5 @@
 var width = 454,
-		height = 465;
+		height = 675;
 
 var svg = d3.select(".bottom-container")
 	.append("svg")
@@ -11,6 +11,9 @@ var g = svg.append("g")
 
 //tooltip status
 var isTooltipHidden = true;
+
+//legend status
+var isLegendHidden = true;
 
 //svg object
 var link, node, idText;
@@ -41,7 +44,7 @@ var url = "https://louislugas.github.io/covid_19_cluster/json/kasus-corona-indon
 function forceNormal() {
 	simulation.force("center")
 		.x(width * forceProperties.center.x)
-		.y(height * forceProperties.center.y);
+		.y(height * forceProperties.center.y+50);
 	simulation.force("charge")
 		.strength(forceProperties.charge.strength * forceProperties.charge.enabled)
 		.distanceMin(forceProperties.charge.distanceMin)
@@ -87,8 +90,8 @@ function forceCluster() {
 	  .range(arrrange)
 
 	simulation.force("center")
-		.x(width * forceProperties.center.x+30)
-		.y(height * forceProperties.center.y);
+		.x(width * forceProperties.center.x)
+		.y(height * forceProperties.center.y+50);
 	simulation.force("charge")
 		.strength(-150)
 		.distanceMin(forceProperties.charge.distanceMin)
@@ -97,12 +100,12 @@ function forceCluster() {
 		.strength(forceProperties.collide.strength * forceProperties.charge.enabled)
 		.radius(forceProperties.collide.radius)
 		.iterations(forceProperties.collide.iterations);
-	simulation.force("forceY")
-		.strength(0.5)
-		.y(height * forceProperties.forceY.y);
 	simulation.force("forceX")
+		.strength(0.5)
+		.x(height * forceProperties.forceX.x);
+	simulation.force("forceY")
 		.strength(0.9)
-		.x(function(d){ return scaleCat(d.klasterid) } );
+		.y(function(d){ return scaleCat(d.klasterid) } );
 	simulation.force("link")
 		.id(function(d) { return d.id ;})
 		.distance(forceProperties.link.distance)
@@ -119,7 +122,7 @@ function forceCluster() {
 function forceAge() {
 
 	//width divider
-	var div = 10
+	var div = 11
 	console.log(div);
 	console.log(width);
 	var scale = width/div/1.5;
@@ -134,8 +137,8 @@ function forceAge() {
 	  .range(arrrange)
 
 	simulation.force("center")
-		.x(width * forceProperties.center.x+25)
-		.y(height * forceProperties.center.y);
+		.x(width * forceProperties.center.x)
+		.y(height * forceProperties.center.y+50);
 	simulation.force("charge")
 		.strength(-150)
 		.distanceMin(forceProperties.charge.distanceMin)
@@ -144,12 +147,12 @@ function forceAge() {
 		.strength(forceProperties.collide.strength * forceProperties.charge.enabled)
 		.radius(forceProperties.collide.radius)
 		.iterations(forceProperties.collide.iterations);
-	simulation.force("forceY")
-		.strength(0.5)
-		.y(height * forceProperties.forceY.y);
 	simulation.force("forceX")
+		.strength(0.5)
+		.x(height * forceProperties.forceX.x);
+	simulation.force("forceY")
 		.strength(0.9)
-		.x(function(d){ return scaleCat(d.umur) } );
+		.y(function(d){ return scaleCat(d.umur) } );
 	simulation.force("link")
 		.id(function(d) { return d.id ;})
 		.distance(forceProperties.link.distance)
@@ -181,8 +184,8 @@ function forceGender() {
 	  .range(arrrange)
 
 	simulation.force("center")
-		.x(width * forceProperties.center.x-10)
-		.y(height * forceProperties.center.y);
+		.x(width * forceProperties.center.x)
+		.y(height * forceProperties.center.y+50);
 	simulation.force("charge")
 		.strength(-150)
 		.distanceMin(forceProperties.charge.distanceMin)
@@ -191,12 +194,12 @@ function forceGender() {
 		.strength(forceProperties.collide.strength * forceProperties.charge.enabled)
 		.radius(forceProperties.collide.radius)
 		.iterations(forceProperties.collide.iterations);
-	simulation.force("forceY")
-		.strength(0.5)
-		.y(height * forceProperties.forceY.y);
 	simulation.force("forceX")
+		.strength(0.5)
+		.x(height * forceProperties.forceX.x);
+	simulation.force("forceY")
 		.strength(0.7)
-		.x(function(d){ return scaleCat(d.genderid) } );
+		.y(function(d){ return scaleCat(d.genderid) } );
 	simulation.force("link")
 		.id(function(d) { return d.id ;})
 		.distance(forceProperties.link.distance)
@@ -228,8 +231,8 @@ function forceStatus() {
 	  .range(arrrange)
 
 	simulation.force("center")
-		.x(width * forceProperties.center.x+5)
-		.y(height * forceProperties.center.y);
+		.x(width * forceProperties.center.x)
+		.y(height * forceProperties.center.y+50);
 	simulation.force("charge")
 		.strength(-150)
 		.distanceMin(forceProperties.charge.distanceMin)
@@ -238,12 +241,12 @@ function forceStatus() {
 		.strength(forceProperties.collide.strength * forceProperties.charge.enabled)
 		.radius(forceProperties.collide.radius)
 		.iterations(forceProperties.collide.iterations);
-	simulation.force("forceY")
-		.strength(0.5)
-		.y(height * forceProperties.forceY.y);
 	simulation.force("forceX")
+		.strength(0.5)
+		.x(height * forceProperties.forceX.x);
+	simulation.force("forceY")
 		.strength(0.7)
-		.x(function(d){ return scaleCat(d.statusid) } );
+		.y(function(d){ return scaleCat(d.statusid) } );
 	simulation.force("link")
 		.id(function(d) { return d.id ;})
 		.distance(forceProperties.link.distance)
@@ -275,7 +278,7 @@ function forceNational() {
 	  .range(arrrange)
 
 	simulation.force("center")
-		.x(width * forceProperties.center.x+30)
+		.x(width * forceProperties.center.x)
 		.y(height * forceProperties.center.y);
 	simulation.force("charge")
 		.strength(-150)
@@ -285,12 +288,12 @@ function forceNational() {
 		.strength(forceProperties.collide.strength * forceProperties.charge.enabled)
 		.radius(forceProperties.collide.radius)
 		.iterations(forceProperties.collide.iterations);
-	simulation.force("forceY")
-		.strength(0.5)
-		.y(height * forceProperties.forceY.y);
 	simulation.force("forceX")
+		.strength(0.5)
+		.x(height * forceProperties.forceX.x);
+	simulation.force("forceY")
 		.strength(0.7)
-		.x(function(d){ return scaleCat(d.wnid) } );
+		.y(function(d){ return scaleCat(d.wnid) } );
 	simulation.force("link")
 		.id(function(d) { return d.id ;})
 		.distance(forceProperties.link.distance)
@@ -451,7 +454,7 @@ function initializeDisplay() {
 			.attr("dy", ".35em")
 			.text(function(d) { return d.id })
 			.style("font-family","Lato")
-			.style("font-size", 13)
+			.style("font-size", 11)
 			.style("fill","white")
 			.on("click", clickNode)
 			.on("mouseover", function(d) {
@@ -573,57 +576,371 @@ function colorCluster(){
 		.attr("r", radius)
 		.style("fill", function(d) {return warna( d.klasterid );})
 		.style("stroke", "white")
-		.style("stroke-width", 3)
+		.style("stroke-width", 3);
+
+	var el = document.getElementsByClassName("legend");
+	$(el).remove();
+
+	//CLUSTER LEGEND
+	function legendCluster() {
+	       // update visibility
+	       isLegendHidden = !isLegendHidden;
+	       var visibility = (isLegendHidden) ? "hidden" : "visible";
+
+				 var data = {"klaster":["Jakarta","Diamond Princess","Kasus Impor","Jakarta-Impor","Subklaster 3","Subklaster 1","Subklaster 20","Tidak Diketahui","Istana Negara"],
+				 	"id":[1,2,3,4,5,6,7,8,9]};
+		     console.log(data);
+
+		     var color = d3.scaleLinear()
+		       .range(d3.schemeCategory10)
+		       .domain(data.id);
+
+	       // load legend content (if it changes based on node)
+				 // Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
+		     var legend = d3
+				 	 .select(".bottom-container")
+					 .append("div")
+					 .attr("class","legend")
+					 .style("position", "absolute")
+			     .style("padding", "4px")
+			     .style("z-index", "2")
+					 .style("top",0)
+					 .style("visibility", visibility)
+					 .append("svg")
+					 .style("height","200px")
+		       .selectAll("g")
+		       .data(data.id)
+		       .enter()
+		       .append("g")
+		       .attr("transform", function(d, i) { return "translate(0," + i * 19 + ")"; });
+
+		     legend.append("rect")
+		       .attr("width", 13)
+		       .attr("height", 13)
+		       .style("fill", color);
+
+		     legend.append("text")
+		       .data(data.klaster)
+		       .attr("x", 24)
+		       .attr("y", 7)
+					 .style("fill","white")
+					 .style("font-family","Lato")
+					 .style("font-size",9)
+		       .attr("dy", ".35em")
+		       .text(function(d) { return d; });
+
+	       // place tooltip where cursor was
+	       return legend.style("visibility", visibility);
+	  }
+
+		legendCluster();
+
+		isLegendHidden = true;
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //COLOR BY GENDER
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 function colorGender(){
+	var domain = [1,2,3];
+
+	var warnaGender = d3.scaleOrdinal()
+	.domain(domain)
+	.range(["salmon","steelblue","black"]);
+
 	node
 		.attr("r", radius)
-		.style("fill", function(d) {return warna( d.genderid );})
+		.style("fill", function(d) {return warnaGender( d.genderid );})
 		.style("stroke", "white")
 		.style("stroke-width", 3)
+
+	var el = document.getElementsByClassName("legend");
+	$(el).remove();
+
+	//GENDER LEGEND
+	function legendGender() {
+	       // update visibility
+	       isLegendHidden = !isLegendHidden;
+	       var visibility = (isLegendHidden) ? "hidden" : "visible";
+
+				 var data = {"klaster":["Perempuan","Laki-laki","Tidak Diketahui"],
+				 	"id":[1,2,3]};
+		     console.log(data);
+
+		     var color = d3.scaleLinear()
+		       .range(["salmon","steelblue","black"])
+		       .domain(data.id);
+
+	       // load legend content (if it changes based on node)
+				 // Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
+		     var legend = d3
+				 	 .select(".bottom-container")
+					 .append("div")
+					 .attr("class","legend")
+					 .style("position", "absolute")
+			     .style("padding", "4px")
+			     .style("z-index", "2")
+					 .style("top",0)
+					 .style("visibility", visibility)
+					 .append("svg")
+					 .style("height","200px")
+		       .selectAll("g")
+		       .data(data.id)
+		       .enter()
+		       .append("g")
+		       .attr("transform", function(d, i) { return "translate(0," + i * 19 + ")"; });
+
+		     legend.append("rect")
+		       .attr("width", 13)
+		       .attr("height", 13)
+		       .style("fill", color);
+
+		     legend.append("text")
+		       .data(data.klaster)
+		       .attr("x", 24)
+		       .attr("y", 7)
+					 .style("fill","white")
+					 .style("font-family","Lato")
+					 .style("font-size",9)
+		       .attr("dy", ".35em")
+		       .text(function(d) { return d; });
+
+	       // place tooltip where cursor was
+	       return legend.style("visibility", visibility);
+	  }
+
+		legendGender();
+
+		isLegendHidden = true;
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //COLOR BY NEGARA
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 function colorNational(){
+
+	var domain = [1,2,3];
+
+	var warnaNational = d3.scaleOrdinal()
+	.domain(domain)
+	.range(["indianred","limegreen","black"]);
+
 	node
 		.attr("r", radius)
-		.style("fill", function(d) {return warna( d.wnid );})
+		.style("fill", function(d) {return warnaNational( d.wnid );})
 		.style("stroke", "white")
 		.style("stroke-width", 3)
+
+		var el = document.getElementsByClassName("legend");
+		$(el).remove();
+
+	//NATIONALITY LEGEND
+	function legendNational() {
+	       // update visibility
+	       isLegendHidden = !isLegendHidden;
+	       var visibility = (isLegendHidden) ? "hidden" : "visible";
+
+				 var data = {"klaster":["WNI","WNA","Tidak Diketahui"],
+				 	"id":[1,2,3]};
+		     console.log(data);
+
+		     var color = d3.scaleLinear()
+		       .range(d3.schemeCategory10)
+		       .domain(data.id);
+
+	       // load legend content (if it changes based on node)
+				 // Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
+		     var legend = d3
+				 	 .select(".bottom-container")
+					 .append("div")
+					 .attr("class","legend")
+					 .style("position", "absolute")
+			     .style("padding", "4px")
+			     .style("z-index", "2")
+					 .style("top",0)
+					 .style("visibility", visibility)
+					 .append("svg")
+					 .style("height","200px")
+		       .selectAll("g")
+		       .data(data.id)
+		       .enter()
+		       .append("g")
+		       .attr("transform", function(d, i) { return "translate(0," + i * 19 + ")"; });
+
+		     legend.append("rect")
+		       .attr("width", 13)
+		       .attr("height", 13)
+		       .style("fill", warnaNational);
+
+		     legend.append("text")
+		       .data(data.klaster)
+		       .attr("x", 24)
+		       .attr("y", 7)
+					 .style("fill","white")
+					 .style("font-family","Lato")
+					 .style("font-size",9)
+		       .attr("dy", ".35em")
+		       .text(function(d) { return d; });
+
+	       // place tooltip where cursor was
+	       return legend.style("visibility", visibility);
+	  }
+
+		legendNational();
+
+		isLegendHidden = true;
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //COLOR BY STATUS
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 function colorStatus(){
+	var domain = [1,2,3,4];
+
+	var warnaStatus = d3.scaleOrdinal()
+	.domain(domain)
+	.range(["limegreen","goldenrod","indianred","black"]);
 	node
 		.attr("r", radius)
-		.style("fill", function(d) {return warna( d.statusid );})
+		.style("fill", function(d) {return warnaStatus( d.statusid );})
 		.style("stroke", "white")
 		.style("stroke-width", 3)
+
+	var el = document.getElementsByClassName("legend");
+	$(el).remove();
+
+	//NATIONALITY LEGEND
+	function legendStatus() {
+			 // update visibility
+			 isLegendHidden = !isLegendHidden;
+			 var visibility = (isLegendHidden) ? "hidden" : "visible";
+
+			 var data = {"klaster":["Sembuh","Dalam Perawatan","Meninggal","Tidak Diketahui"],
+				"id":[1,2,3,4]};
+			 console.log(data);
+
+			 var color = d3.scaleLinear()
+				 .range(d3.schemeCategory10)
+				 .domain(data.id);
+
+			 // load legend content (if it changes based on node)
+			 // Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
+			 var legend = d3
+				 .select(".bottom-container")
+				 .append("div")
+				 .attr("class","legend")
+				 .style("position", "absolute")
+				 .style("padding", "4px")
+				 .style("z-index", "2")
+				 .style("top",0)
+				 .style("visibility", visibility)
+				 .append("svg")
+				 .style("height","200px")
+				 .selectAll("g")
+				 .data(data.id)
+				 .enter()
+				 .append("g")
+				 .attr("transform", function(d, i) { return "translate(0," + i * 19 + ")"; });
+
+			 legend.append("rect")
+				 .attr("width", 13)
+				 .attr("height", 13)
+				 .style("fill", warnaStatus);
+
+			 legend.append("text")
+				 .data(data.klaster)
+				 .attr("x", 24)
+				 .attr("y", 7)
+				 .style("fill","white")
+				 .style("font-family","Lato")
+				 .style("font-size",9)
+				 .attr("dy", ".35em")
+				 .text(function(d) { return d; });
+
+			 // place tooltip where cursor was
+			 return legend.style("visibility", visibility);
+	}
+
+	legendStatus();
+
+	isLegendHidden = true;
 	};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //COLOR BY UMUR
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 function colorAge(){
-	var domain = [0,10,20,30,40,50,60,70,80, 90, 100];
+	var domain = [0,10,20,30,40,50,60,70,80,90,100];
 
 	var warnaAge = d3.scaleQuantile()
 	.domain(domain)
-	.range(d3.schemeCategory10);
+	.range(["#77e531","#78d33c","#7ac047","#7bae52","#7c9b5d","#7d8968","#7e7772","#815288","#823f93","#8608b4","black"]);
 
 	node
 		.attr("r", radius)
 		.style("fill", function(d) {return warnaAge(d.umur);})
 		.style("stroke", "white")
 		.style("stroke-width", 3)
+
+	var el = document.getElementsByClassName("legend");
+	$(el).remove();
+
+	//NATIONALITY LEGEND
+	function legendAge() {
+			 // update visibility
+			 isLegendHidden = !isLegendHidden;
+			 var visibility = (isLegendHidden) ? "hidden" : "visible";
+
+			 var data = {"klaster":["0-9 tahun","10-19 tahun","20,29 tahun","30-39 tahun","40-49 tahun","50-59 tahun","60-69 tahun","70-79 tahun","80-89 tahun","90-99 tahun","Tidak Diketahui"],
+				"id":[1,2,3,4,5,6,7,8,9,10,11]};
+			 console.log(data);
+
+			 var color = d3.scaleLinear()
+				 .range(["#77e531","#78d33c","#7ac047","#7bae52","#7c9b5d","#7d8968","#7e7772","#815288","#823f93","#8608b4","black"])
+				 .domain(data.id);
+
+			 // load legend content (if it changes based on node)
+			 // Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
+			 var legend = d3
+				 .select(".bottom-container")
+				 .append("div")
+				 .attr("class","legend")
+				 .style("position", "absolute")
+				 .style("padding", "4px")
+				 .style("z-index", "2")
+				 .style("top",0)
+				 .style("visibility", visibility)
+				 .append("svg")
+				 .style("height","200px")
+				 .selectAll("g")
+				 .data(data.id)
+				 .enter()
+				 .append("g")
+				 .attr("transform", function(d, i) { return "translate(0," + i * 19 + ")"; });
+
+			 legend.append("rect")
+				 .attr("width", 13)
+				 .attr("height", 13)
+				 .style("fill", color);
+
+			 legend.append("text")
+				 .data(data.klaster)
+				 .attr("x", 24)
+				 .attr("y", 7)
+				 .style("fill","white")
+				 .style("font-family","Lato")
+				 .style("font-size",9)
+				 .attr("dy", ".35em")
+				 .text(function(d) { return d; });
+
+			 // place tooltip where cursor was
+			 return legend.style("visibility", visibility);
+	}
+
+	legendAge();
+
+	isLegendHidden = true;
 };
 
 //update the position after each simulation tick
@@ -697,6 +1014,12 @@ function clickNode(node) {
      node.fy = null;
   }
 
+	// reset nodes to not be pinned
+	function unPinLegend(legend) {
+		 legend.fx = null;
+		 legend.fy = null;
+	}
+
   // add html content to tooltip
   function loadTooltipContent(node) {
       var htmlContent = "<div>";
@@ -704,7 +1027,7 @@ function clickNode(node) {
       htmlContent += "<table>"
       htmlContent += "<tr><td width=\"30%\">Jenis Kelamin: <\/td> <td><strong>" + node.gender +"<\/strong><\/td><\/tr>"
       htmlContent += "<tr><td width=\"30%\">Umur: <\/td> <td><strong>" + node.umurtext +"<\/strong><\/td><\/tr>"
-			htmlContent += "<tr><td width=\"40%\">Status: <\/td> <td><strong>" + node.status +"<\/strong><\/td><\/tr>"
+			htmlContent += "<tr><td width=\"30%\">Status: <\/td> <td><strong>" + node.status +"<\/strong><\/td><\/tr>"
 			htmlContent += "<tr><td width=\"30%\">Kewarganegaraan: <\/td> <td><strong>" + node.wn +"<\/strong><\/td><\/tr>"
       htmlContent += "<tr><td width=\"30%\">Tanggal Pengumuman: <\/td> <td><strong>" + node.pengumuman +"<\/strong><\/td><\/tr>"
       htmlContent += "<tr><td width=\"30%\">Asal Penularan: <\/td> <td><strong>" + node.penularan +"<\/strong><\/td><\/tr>"
@@ -713,18 +1036,19 @@ function clickNode(node) {
   }
 
   // add tooltip to HTML body
-  var tooltip = d3.select(".middle-container")
+  var tooltip = d3.select(".bottom-container")
     .append("div")
     .attr("class", "tooltip")
     .style("position", "absolute")
     .style("padding", "4px")
     .style("z-index", "10")
-    .style("width", "445px")
-    .style("height", "180px")
+    .style("width", "350px")
+		.style("left","52px")
     .style("margin", "auto")
-    .style("background-color", "rgba(255, 255, 255, 0.8)")
+    .style("background-color", "rgba(255, 255, 255, 0.9)")
     .style("visibility", "hidden")
     .style("font-family", "Lato")
+		.style("top","100px")
     .text("");
 
 function zoom_actions(){
