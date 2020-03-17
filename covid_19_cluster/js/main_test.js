@@ -1,5 +1,5 @@
 var width = 454,
-		height = 675;
+		height = 625;
 
 var svg = d3.select(".bottom-container")
 	.append("svg")
@@ -533,6 +533,25 @@ function initializeDisplay() {
 
 	//visualize the graph
 	updateDisplay();
+	initialScale();
+}
+
+
+//CHANGE DISPLAY SCALE
+function initialScale() {
+
+	var scale = "translate(50,50), scale(.8,.8)";
+	console.log(scale);
+
+	node
+		.attr("transform",scale);
+
+	link
+		.attr("transform",scale);
+
+	idText
+		.attr("transform",scale);
+
 }
 
 //update the display based on the forces (but not positions)
